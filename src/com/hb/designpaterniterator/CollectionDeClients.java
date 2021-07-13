@@ -11,6 +11,7 @@ public class CollectionDeClients implements Iterator<Clients>, Iterable<Clients>
 
     @Override
     public Iterator<Clients> iterator() {
+        offset = 0;
         return clients.iterator();
     }
 
